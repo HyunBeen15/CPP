@@ -1,0 +1,14 @@
+#include <iostream>
+
+int main()
+{
+    for(int i = 1; i <= 5; ++i)             // = 초기값은 1, i가 5 이하면 1을 계속 더해라.
+    {
+        for(int j = 1; j <= i; ++j)         //     i = 1
+        {
+            std::cout << j;                 // std::cout << i << "\n"; 
+        }
+
+        std::cout << "\n";                  //i를 출력하라. \n = 줄을 바꿔라.
+    }
+}
