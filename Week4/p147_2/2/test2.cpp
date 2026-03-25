@@ -1,7 +1,10 @@
 #include <iostream>
 #include <algorithm>
+#include <string>
 
 int reverse(int a);
+std::string reverse(std::string s);
+
 int main()
 {
     int a;
@@ -21,7 +24,6 @@ int reverse(int a)
 
     while(a)
     {
-        int reverse_Number = 0;
         int digit = a % 10;
         reverse_Number = reverse_Number * 10 + digit;
         a /= 10;
@@ -32,6 +34,6 @@ int reverse(int a)
 
 std::string reverse(std::string s)
 {
-    reverse(s.begin(), s.end());
+    std::reverse(s.begin(), s.end());
     return s;
 }

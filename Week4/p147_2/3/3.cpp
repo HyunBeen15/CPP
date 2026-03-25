@@ -1,9 +1,9 @@
 #include <algorithm>
 #include "3.hpp"
 
-std::string reverse(std::string s)
+std::string reverse(std::string s);
 {
-    reverse(s.begin(), s.end());
+    std::reverse(s.begin(), s.end());
     return s;
 }
 
