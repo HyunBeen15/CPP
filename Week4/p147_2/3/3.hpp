@@ -1,4 +1,8 @@
-#include <iostream>
+#ifndef HPP3
+#define HPP3
+
 #include <string>
 
-std::string_reverse()
+std::string reverseString(std::string s);
+
+#endif

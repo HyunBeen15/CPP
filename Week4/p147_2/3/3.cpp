@@ -1,7 +1,9 @@
+#include <iostream>
 #include <algorithm>
+#include <string>
 #include "3.hpp"
 
-std::string reverse(std::string s);
+std::string reverseString(std::string s)
 {
     std::reverse(s.begin(), s.end());
     return s;
@@ -13,5 +15,7 @@ int main()
     std::cout << "숫자를 입력하세요: ";
     std::cin >> s;
 
-    std::cout << reverse(s) << std::endl;
+    std::cout << reverseString(s) << std::endl;
+
+    return 0;
 }

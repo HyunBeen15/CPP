@@ -7,7 +7,6 @@ int reverse(int a)
 
     while(a)
     {
-        int reverse_Number = 0;
         int digit = a % 10;
         reverse_Number = reverse_Number * 10 + digit;
         a /= 10;
@@ -16,7 +15,7 @@ int reverse(int a)
     return reverse_Number;
 }
 
-std::string reverse(std::string s)
+std::string reverseString(std::string s)
 {
     reverse(s.begin(), s.end());
     return s;
@@ -26,13 +25,11 @@ int main()
 {
     int a;
     std::cin >> a;
-
     std::cout << reverse(a) << std::endl;
 
     std::string s;
     std::cin >> s;
-
-    std::cout << reverse(s) << std::endl;
+    std::cout << reverseString(s) << std::endl;
 }
 
 // 문자열 출력
