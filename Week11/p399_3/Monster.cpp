@@ -1,4 +1,4 @@
-#include "Monster.h"
+#include "Monster.h"  // Monster.cpp에서는 클래스 구현 파일. main함수가 없어서 실행 X, MonsterWorld에 main함수 존재.
 #include <cstdlib>
 
 int Monster::nCount = 0;                      // static 변수 초기화

@@ -1,4 +1,5 @@
 #include "MonsterWorld.h"
+#include "Monster.cpp"
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
