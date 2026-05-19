@@ -6,12 +6,11 @@ protected:
     int x, y;
 
 public:
-    Point(int xx, int yy)     // 생성자
-        : x(xx), y(yy) {
+    Point(int xx, int yy): x(xx), y(yy) {   // 생성자
     }
 };
 
-class Rectangle : public Point {         // 자식 클래스
+class Rectangle : public Point {            // 자식 클래스
 private: 
     int width, height;
 
